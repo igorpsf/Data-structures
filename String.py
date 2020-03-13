@@ -32,3 +32,13 @@ print(s)    # aceghfdb
 d = "Hello"
 print(d[::2])
 
+s = "My \n" \
+    "name \n" \
+    "is"
+print(s)
+
+s2 = """My
+name
+is"""
+print(s2)
+
