@@ -68,3 +68,53 @@ elements = {"hydrogen": { "number": 1,
 print(elements["helium"]) # {'number': 2, 'weight': 4.002602, 'symbol': 'He'}
 print(elements["helium"]["weight"]) # 4.002602
 
+##
+
+cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+for i, c in cool_beasts.items():    # .keys(), .values()
+    print("{} have {}".format(i, c))
+
+##
+
+def email_list(domains):
+    emails = []
+    for mail,users in domains.items():
+        for user in users:
+            emails.append("{}@{}".format(user,mail))
+    return(emails)
+
+print(email_list({"gmail.com": ["clark.kent", "diana.prince", "peter.parker"], "yahoo.com": ["barbara.gordon", "jean.grey"], "hotmail.com": ["bruce.wayne"]}))
+
+
+##
+
+# The add_prices function returns the total price of all of the groceries in the dictionary. Fill in the blanks to complete this function.
+
+def add_prices(basket):
+    # Initialize the variable that will be used for the calculation
+    total = 0
+
+    # Iterate through the dictionary items
+    for keys, values in basket.items():
+        # Add each price to the total calculation
+        # Hint: how do you access the values of
+        # dictionary items?
+        total += values
+    # Limit the return value to 2 decimal places
+	return round(total, 2)
+
+groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59,
+	"coffee": 6.99, "milk": 3.39, "eggs": 2.98, "cheese": 5.44}
+
+print(add_prices(groceries)) # Should print 28.44
+
+
+# Complete the code to iterate through the keys and values of the car_prices dictionary, printing out some information about each one.
+
+def car_listing(car_prices):
+    result = ""
+    for keys, values in car_prices.items():
+        result += "{} costs {} dollars".format(keys, values) + "\n"
+    return result
+
+print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
