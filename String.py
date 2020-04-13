@@ -1,3 +1,7 @@
+dir("")
+help("")    # press q
+type("")
+
 #Immutable
 
 # s = "Hello"
@@ -7,7 +11,7 @@
 # Hello2
 # Hello3
 # """
-# print(s2)
+# print(s2)hulk hogan
 #
 # x = s.count("l")
 # print(x)    # 2

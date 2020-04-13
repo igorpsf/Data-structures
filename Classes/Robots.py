@@ -1,3 +1,4 @@
+
 class Robot:
     def __init__(self, name, color, weight):
         self.name = name
@@ -23,8 +24,6 @@ r2 = Robot("Jerry", "blue", 40)
 r1.introduce_self()
 r2.introduce_self()
 
-###
-
 class Person:
     def __init__(self, name, personality, isSitting, robotOwned):
         self.name = name
@@ -46,5 +45,3 @@ p2 = Person("Becky", "talkative", True, r1)
 
 p1.robotOwned.introduce_self()
 p2.robotOwned.introduce_self()
-
-
